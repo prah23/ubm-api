@@ -1,0 +1,10 @@
+.vscode
+nm
+ubm/ubm/__pycache__
+ubm/main/__pycache__
+ubm/main/migrations
+.env
+venv
+env
+__pycache__
+db.sqlite3

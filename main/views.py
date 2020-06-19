@@ -67,8 +67,6 @@ class URLDeleteAll(APIView):
     def get(self, request):
         try:
             URLData.objects.filter(user=request.user.id).delete()
-            return Response({
-                "status" : "deleted"
-                },status=204)
+            return Response(status=204)
         except:
             return Response(status=404)
